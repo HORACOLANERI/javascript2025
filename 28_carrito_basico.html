@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tablaCarrito"></div>
+    
+<script>
+
+let catalogo=[
+        {producto:"pan",categoria:"Alimentación",precio:1.2},
+        {producto:"guantes",categoria:"Textil",precio:22.5},
+        {producto:"zapatos",categoria:"Textil",precio:65.0},
+        {producto:"pantalla",categoria:"Informática",precio:200},
+        {producto:"teclado",categoria:"Informática",precio:35.8},
+        {producto:"leche",categoria:"Alimentación",precio:2.0}
+    ]; 
+let carrito=[];
+
+let html="<tr><th>Producto</th><th>Categoría</th><th>Precio</th><th></th></tr>";
+
+
+.forEach(r=>html=html+`<tr><td>${r.tematica}</td><td>${r.direccion}</td></tr>`);
+                //volcado en la etiqueta tabla:
+                document.getElementById("resultados").innerHTML=html;
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

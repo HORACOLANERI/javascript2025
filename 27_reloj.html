@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      color: #0f0;
+      font-size: 200px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+    <div id="reloj"></div>
+   
+   <script>
+
+function actualizarReloj() {
+    const ahora = new Date();
+    const hora = ahora.toLocaleTimeString(); // hh:mm:ss
+    document.getElementById("reloj").textContent = hora;
+  }
+
+  // Actualiza el reloj cada segundo
+  setInterval(actualizarReloj, 1000);
+
+  // Llamada inicial para que no espere 1 segundo
+  actualizarReloj();
+
+
+    </script>
+    
+</body>
+</html>
